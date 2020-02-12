@@ -1,14 +1,124 @@
+
+
+
+/* ==================================== BROWSER SETTINGS ====================================== */
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arvo', serif;
+    font-family: 'Arvo', sans-serif;
     font-weight: bolder;
     color: #333;
+
 }
 
-.flex-container {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+/* ======================================== TOP SECTION ============================================= */
+
+.top-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+/* ---------------------------- titles -------------------------- */
+
+.titles {
+    background: #EFECEF;
+}
+
+.titles>h1 {
+    font-size: 2.5em;
+    color: #F2A93B;
+    font-weight: normal;
+}
+
+.ui-container {
+    background: #F7F7F7;
+    
+}
+
+input {
+    min-width: 50%;
+    border-radius: 30px;
+    border: 1px solid #EFECEF;
+    outline: none;
+    height: 2.5em;
+    text-indent: 15px;
+    margin-top: 2rem;
+    color: #F2A93B;
+    font-weight: 900;
+}
+
+::placeholder {
+    color: rgba(107, 102, 107, 0.692);
+}
+
+button {
+    background: #F2A93B;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    height: 3em;
+    min-width: 12%;
+    margin: 2rem 0.3rem;
+    font-size: 0.6em;
+}
+
+/* button:focus {
+    up & down arrow
+} */
+
+/* =========================================== DISPLAY SECTION ============================================ */
+
+.display-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #EFECEF;
+    min-width: 100%;
+    padding-top: 10px;
+}
+
+.display-container>div {
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* border: 1px solid #999; */
+    background: #F7F7F7;
+}
+
+ img {
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+} 
+
+h2 {
+    font-weight: normal;
+    color: #F2A93B;
+    font-size: 1em; 
+}
+
+/* p {
+    text-align: left;
+    font-weight: normal;
+    font-size: smaller;
+    
+} */
+
+/* .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -23,4 +133,4 @@ body {
 
 img {
     width: 45%;
-}
+} */
